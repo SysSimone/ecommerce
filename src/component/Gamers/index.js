@@ -3,8 +3,8 @@ import { View, Text, StyleSheet, TouchableOpacity, Image } from 'react-native';
 
 export default function Gamers(props) {
 
-    function filterDesc(desc){
-        if(desc.length < 27){
+    function filterDesc(desc) {
+        if (desc.length < 27) {
             return desc;
         }
 
@@ -22,7 +22,7 @@ export default function Gamers(props) {
                 {filterDesc(props.children)}
             </Text>
             <View opacity={0.4}>
-            <Text style={styles.gamersText}> {props.cost}</Text>
+                <Text style={styles.gamersText}> {props.cost}</Text>
             </View>
         </TouchableOpacity>
 
@@ -39,7 +39,8 @@ const styles = StyleSheet.create({
     gamersImg: {
         backgroundColor: '#D8D8D8',
         width: 175,
-        height: 175
+        height: 175,
+        justifyContent: 'space-around'
     },
 
     gamersText: {

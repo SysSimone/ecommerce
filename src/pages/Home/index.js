@@ -14,12 +14,12 @@ export default function Home() {
         <View style={styles.container}>
             <View style={styles.header}>
                 <Image
-                    source={require('../../assets/Pc-Gamer-Computador-PNG.png')}
+                    source={require('../../assets/banner.png')}
                     style={styles.image}
                 />
                 <View style={styles.textContainer}>
-                    <Text style={{ fontFamily: 'Anton_400Regular', fontWeight: 'bold', fontSize: 20 }} > Headset HyperX CloudFlight </Text>
-                    <Text style={styles.text}> um novo patamar de performance  A </Text>
+                    <Text style={{ fontFamily: 'Anton_400Regular', fontSize: 20 }} > Sua loja de produtos gamers </Text>
+                    <Text style={styles.text}> um novo patamar de performance  A Hyper X </Text>
                     <TouchableOpacity style={{ position: 'absolute', right: 0, alignSelf: 'center' }}>
                         <MaterialIcons
                             name="filter-list"
@@ -39,12 +39,12 @@ export default function Home() {
 
 
                 <View style={{ flexDirection: 'row', justifyContent: 'space-around' }}>
-                    <Gamers img={require('../../assets/Pc-Gamer-Computador-PNG.png')} cost="R$1500,00" onClick={() => navigation.navigate('Detail')}>
-                        Gabinete Gamer Mavint G05 Sem Fonte Preto
+                    <Gamers img={require('../../assets/HyperX-H7-Cloud-Flight-2.png')} cost="R$1500,00" onClick={() => navigation.navigate('Detail')}>
+                    Headset HyperX CloudFlight
                     </Gamers >
 
-                    <Gamers img={require('../../assets/poltrona6.png')} cost="R$2500,00" onClick={() => navigation.navigate('Detail')}>
-                        Poltrona Gamer Cougar Ranger 3MRANGER.0001
+                    <Gamers img={require('../../assets/poltrona6.png')} cost="R$2500,00" onClick={() => alert('CLICOU')}>
+                        Poltrona Gamer Cougar Ranger 
                     </Gamers>
                 </View>
 
@@ -60,8 +60,8 @@ export default function Home() {
 
 
                 <View style={{ flexDirection: 'row', justifyContent: 'space-around' }}>
-                    <Gamers img={require('../../assets/HyperX-H7-Cloud-Flight-2.png')} cost="R$2500,00" onClick={() => alert('CLICOU')}>
-                        Headset HyperXCloudFlight
+                    <Gamers img={require('../../assets/aoc1.png')} cost="R$2500,00" onClick={() => alert('CLICOU')}>
+                        Monitor Gamer
                     </Gamers >
 
                     <Gamers img={require('../../assets/joystick-logitech-extreme-3d-pro.png')} cost="R$1350,00" onClick={() => alert('CLICOU')}>
@@ -80,7 +80,6 @@ const styles = StyleSheet.create({
     container: {
         flex: 1,
         width: '100%',
-        
         backgroundColor: '#FFF',
     },
     header: {
@@ -88,12 +87,10 @@ const styles = StyleSheet.create({
     },
     image: {
         width: '100%',
-        marginTop:'10%',
-        marginRight:'10%',
-        marginHorizontal:'1%',
+        marginTop: 30,
+        marginRight: '10%',
+        marginHorizontal: '1%',
         height: 350,
-    
-       
     },
     textContainer: {
         flexDirection: 'column',
@@ -102,7 +99,7 @@ const styles = StyleSheet.create({
     },
     text: {
         fontFamily: 'Anton_400Regular',
-        fontSize: 15,
+        fontSize: 10,
         marginHorizontal: '1%'
     },
     line: {
